@@ -3,6 +3,7 @@ export class CharacterDto {
   nameKo: string;
   description: string;
   traits: string[];
+  imageUrl: string;
 }
 
 export class TestResultDto {
