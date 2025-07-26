@@ -6,6 +6,7 @@ import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
 import { PersonalityTestModule } from './personality-test/personality-test.module';
 import { YoutubeModule } from './youtube/youtube.module';
+import { CharacterModule } from './character/character.module'; // Assuming you have a character module
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { YoutubeModule } from './youtube/youtube.module';
     UserModule,
     PersonalityTestModule,
     YoutubeModule,
+    CharacterModule,
   ],
   controllers: [AppController],
   providers: [AppService],
