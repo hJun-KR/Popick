@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
+import { PersonalityTestModule } from './personality-test/personality-test.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { ConfigModule } from '@nestjs/config';
     }),
     AuthModule,
     UserModule,
+    PersonalityTestModule,
   ],
   controllers: [AppController],
   providers: [AppService],
